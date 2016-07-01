@@ -197,8 +197,10 @@ static CGSize AssetGridThumbnailSize;
     [_okButton setTitle:@"发送" forState:UIControlStateNormal];
     [_okButton setTitle:@"发送" forState:UIControlStateDisabled];
     [_okButton setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
-    [_okButton setTitleColor:tzImagePickerVc.oKButtonTitleColorNormal forState:UIControlStateNormal];
-    [_okButton setTitleColor:tzImagePickerVc.oKButtonTitleColorDisabled forState:UIControlStateDisabled];
+    [_okButton setTitleColor:[UIColor orangeColor] forState:UIControlStateDisabled];
+    
+//    [_okButton setTitleColor:tzImagePickerVc.oKButtonTitleColorNormal forState:UIControlStateNormal];
+//    [_okButton setTitleColor:tzImagePickerVc.oKButtonTitleColorDisabled forState:UIControlStateDisabled];
     _okButton.enabled = tzImagePickerVc.selectedModels.count;
     
     _numberImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamedFromMyBundle:@"photo_number_icon.png"]];

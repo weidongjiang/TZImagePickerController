@@ -127,7 +127,7 @@
     [_okButton addTarget:self action:@selector(okButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [_okButton setTitle:@"发送" forState:UIControlStateNormal];
     [_okButton setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
-    [_okButton setTitleColor:_tzImagePickerVc.oKButtonTitleColorNormal forState:UIControlStateNormal];
+//    [_okButton setTitleColor:_tzImagePickerVc.oKButtonTitleColorNormal forState:UIControlStateNormal];
     
     _numberImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamedFromMyBundle:@"photo_number_icon.png"]];
     _numberImageView.backgroundColor = [UIColor clearColor];

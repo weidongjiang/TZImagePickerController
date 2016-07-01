@@ -87,7 +87,7 @@
     [_okButton setTitle:@"发送" forState:UIControlStateNormal];
     [_okButton setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     TZImagePickerController *imagePickerVc = (TZImagePickerController *)self.navigationController;
-    [_okButton setTitleColor:imagePickerVc.oKButtonTitleColorNormal forState:UIControlStateNormal];
+//    [_okButton setTitleColor:imagePickerVc.oKButtonTitleColorNormal forState:UIControlStateNormal];
     
     [_toolBar addSubview:_okButton];
     [self.view addSubview:_toolBar];
