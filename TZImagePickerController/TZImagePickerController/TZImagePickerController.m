@@ -363,7 +363,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TZAlbumCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TZAlbumCell"];
     TZImagePickerController *imagePickerVc = (TZImagePickerController *)self.navigationController;
-    cell.selectedCountButton.backgroundColor = imagePickerVc.oKButtonTitleColorNormal;
+//    cell.selectedCountButton.backgroundColor = imagePickerVc.oKButtonTitleColorNormal;
+    cell.selectedCountButton.backgroundColor = [UIColor orangeColor];
+    
     cell.model = _albumArr[indexPath.row];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
